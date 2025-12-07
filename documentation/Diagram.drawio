@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="26.0.10">
+  <diagram name="Page-1" id="JTmqMmBm0iTwo1imC8oX">
+    <mxGraphModel dx="797" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3K2dJ0v421HY11UtL2Pu-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="250.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-6" value="Initial Approach" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3K2dJ0v421HY11UtL2Pu-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="250.22222222222217" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-7" value="Dotnet Console Application" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-8" value="1. GET CALLS&lt;div&gt;2. POST CALLS&lt;/div&gt;&lt;div&gt;3. PUT CALLS*&lt;/div&gt;&lt;div&gt;4. DELETE CALLS*&lt;/div&gt;&lt;div&gt;5. PATCH CALLS*&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;** Means later feature&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="3K2dJ0v421HY11UtL2Pu-7">
+          <mxGeometry x="30" y="45" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="280.2222222222222" as="targetPoint" />
+            <mxPoint x="550" y="280.0000000000001" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-10" value="Available API" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="550" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-14" value="Displays Result" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="415" y="258" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-16" value="Calls API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="228" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-26" value="Interacts with Console" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="218" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-27" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-28" value="Dotnet Console Application" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="3K2dJ0v421HY11UtL2Pu-29" value="Create Collection of Calls in JSON Format&lt;div&gt;1.&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;** Means later feature&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="3K2dJ0v421HY11UtL2Pu-28">
+          <mxGeometry x="30" y="45" width="150" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
