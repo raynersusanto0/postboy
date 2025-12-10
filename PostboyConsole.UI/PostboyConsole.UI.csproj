@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../PostboyConsole.Utilities/PostboyConsole.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

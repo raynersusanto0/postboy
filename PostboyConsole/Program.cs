@@ -13,7 +13,7 @@ class Program
             .ConfigureServices((hostContext, services) =>
             {
                 // Register UI Component
-                services.AddTransient<PostboyConsole.UI.ViewModels.MainMenu>();
+                services.AddTransient<PostboyConsole.UI.ViewModels.CallMenu>();
                 services.AddTransient<PostboyConsole.UI.ConsoleApp>();
 
                 // Register Hosted Service

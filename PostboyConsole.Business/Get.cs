@@ -1,6 +1,6 @@
 ﻿namespace PostboyConsole.BusinessLogic;
 
-public class Class1
+public class Get
 {
-
+    
 }

@@ -1,22 +1,28 @@
-﻿namespace PostboyConsole.UI;
+﻿using PostboyConsole.Utilities;
+
+namespace PostboyConsole.UI;
 
 public class ConsoleApp
 {
-    private readonly ViewModels.MainMenu _mainMenu;
-
-    public ConsoleApp(ViewModels.MainMenu mainMenu)
+    private string title = "Welcome to Postboy Console UI!";
+    private List<string> options = new List<string>()
     {
-        _mainMenu = mainMenu;
+        "Call Menu", "Collection Menu (coming soon...)"
+    };
+
+    private readonly ViewModels.CallMenu _callMenu;
+
+    public ConsoleApp(ViewModels.CallMenu mainMenu)
+    {
+        _callMenu = mainMenu;
     }
 
     public async Task RunAsync(CancellationToken cancellationToken)
     {
-        Console.WriteLine("Welcome to Postboy Console UI!");
         while (!cancellationToken.IsCancellationRequested)
         {
-            Console.WriteLine("Choose from the options below:");
-            Console.WriteLine("1. POST  2. GET  3. Exit");
-            var input = Console.ReadLine();
+            PrintUtility.PrintMenu(title, options);
+            var input = InputUtility.InputMenu();
 
             if(int.TryParse(input, out int choice))
             {
@@ -25,20 +31,20 @@ public class ConsoleApp
                     switch(choice)
                     {
                         case 1:
-                            Console.WriteLine("You selected POST.");
-                            await _mainMenu.ShowAsync();
+                            PrintUtility.PrintOptionSelected(options[0]);
+                            await _callMenu.ShowAsync();
                             // Handle POST logic
                             break;
                         case 2:
-                            Console.WriteLine("You selected GET.");
-                            await _mainMenu.ShowAsync();
+                            PrintUtility.PrintOptionSelected(options[1], false);
                             // Handle GET logic
                             break;
                         case 3:
+                            PrintUtility.PrintOptionSelected("Exit");
                             Console.WriteLine("Exiting...");
                             return;
                         default:
-                            Console.WriteLine("Invalid choice. Please try again.");
+                            PrintUtility.PrintOptionSelected();
                             break;
                     }
                 }
@@ -49,11 +55,8 @@ public class ConsoleApp
             }
             else
             {
-                Console.WriteLine("Invalid input. Please enter a number.");
+                PrintUtility.PrintOptionSelected();
             }
         }
-
-
-        await _mainMenu.ShowAsync();
     }
 }
